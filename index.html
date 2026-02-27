@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <section class="leftLogin">
+        <div class="loginTitle">
+          <h2>Faça Login</h2>
+          <h2>E entre para o nosso time</h2>
+        </div>
+
+        <img src="./img/astronauta.png" alt="Imagem de astronauta" />
+      </section>
+
+      <section class="rightLogin">
+        <article class="cardLogin">
+          <h1>Login</h1>
+          <form action="/" method="post" >
+            <div class="textfield">
+              <label for="user">Usuário</label>
+              <input
+                type="text"
+                name="user"
+                id="user"
+                placeholder="Usuário"
+                required
+              />
+            </div>
+
+            <div class="textfield">
+              <label for="password">Senha</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Senha"
+                required
+              />
+            </div>
+            <button type="submit">Login</button>
+          </form>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

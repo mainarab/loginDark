@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "SN Pro", sans-serif;
+}
+
+body {
+  background-color: #140021;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  width: 50%;
+}
+
+.leftLogin {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.loginTitle {
+  color: #faebd7;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.rightLogin {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardLogin {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #270240;
+  border-radius: 20px;
+  padding: 30px 35px;
+  box-shadow: 0px 10px 40px #00000092;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cardLogin h1 {
+  font-size: 3rem;
+  color: #faebd7;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.textfield {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  font-size: 1rem;
+  color: #faebd7;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.textfield input {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #401e5092;
+  font-size: 12pt;
+  outline: none;
+  color: #faebd7;
+  box-shadow: 0px 10px 40px #0000003c
+}
+
+.textfield input::placeholder {
+  color: #bab6af;
+}
+
+.cardLogin > form > button {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #270240;
+  cursor: pointer;
+  box-shadow: 0px 10px 40px -12px #bab6afa0 ;
+}
+
+@media only screen and (max-width:950px){
+.cardLogin{
+    width: 85%;
+}
+
+}
+
+@media only screen and (max-width:600px){
+main{
+    flex-direction: column;
+}
+
+.loginTitle{
+    display: none;
+}
+
+.leftLogin{
+    width: 100%;
+    height: auto;
+}
+
+.rightLogin{
+    width: 100%;
+    height: auto;
+}
+
+
+}
